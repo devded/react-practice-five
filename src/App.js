@@ -5,7 +5,7 @@ import PrivateRoute from './PrivateRoute'
 function App() {
   return (
     <div className="App">
-      <PrivateRoute path="/" component={Dashboard} isAuthenticated={true} exact />
+      <PrivateRoute path="/" component={Dashboard} isAuthenticated={false} exact />
       <Route path="/login" component={Login} exact />
     </div>
   );
